@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>国际产能合作信息服务平台</title>
+        <meta name="description" content="国际产能合作信息服务平台">
+        <meta name="keywords" content="国际产能合作信息服务平台">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <link href="favicon.ico" >
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" media="screen" />
+
+    </head>
+    <body >
+        {% include 'base/header.html' %}
+        {% block content %}
+        {% endblock %}
+        <footer class="tem_footer">
+        </footer>
+    </body>
+</html>
