@@ -25,7 +25,22 @@
     <section>
         <div class="sec-slider">
             {% include 'home/home_slider.html' %}
-
+        </div>
+    </section>
+    <section>
+        <div class="sec-news">
+            {% include 'base/tab_box.html'%}
+            {% include 'home/home_event.html'%}
+            <div class="clearfix"></div>
+        </div>
+        <div class="sec-content">
+            <div class="content-l">
+                {% include 'home/home_menul.html' %}
+            </div>
+            <div class="content-r">
+                {% include 'base/list_box.html' %}
+            </div>
+            <div class="clearfix"></div>
         </div>
     </section>
 {% endblock %}

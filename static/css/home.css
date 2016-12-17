@@ -4,7 +4,7 @@
 }
 
 
-/* slider */
+/* 首页轮播图slider */
 
 .sec-slider {
     width: 978px;
@@ -14,6 +14,9 @@
     margin: 5px;
 }
 
+.sec-news {
+
+}
 .my-slider ul li p {
     float: right;
     width: 50%
@@ -27,7 +30,9 @@
     bottom: 15px;
     z-index: 1;
 }
-
+.unslider-nav .unslider-active {
+    background-color: #0090ED;
+}
 .unslider-nav ol {
     list-style: none;
     padding: 0px;
@@ -46,4 +51,77 @@
     opacity: 0.7;
     color: #ccc;
     background: #666;
+}
+/* 首页 content*/
+.sec-content >div {
+    margin: 5px;
+}
+.content-l {
+    width: 237px;
+    float: left;
+}
+.content-r {
+    width: 743px;
+    float: right;
+}
+/* 首页 左侧菜单 */
+.content-l .menu {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+}
+.content-l .menu li {
+    height: 58px;
+    margin-bottom: 10px;
+    line-height: 58px;
+    background: -webkit-linear-gradient(#E7E7E7,#EEEEEE,#D9D9D9);
+    background: -o-linear-gradient(#E7E7E7,#EEEEEE,#D9D9D9);
+    background: -moz-linear-gradient(#E7E7E7,#EEEEEE,#D9D9D9);
+    background: linear-gradient(#E7E7E7,#EEEEEE,#D9D9D9);
+    background-color: #E2E2E2;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0px;
+    padding-left: 18px;
+    list-style: none;
+    overflow: hidden;
+}
+.content-l .menu li a {
+    display: block;
+    color: #0071C7;
+    text-shadow: 0 1px 1px #fff;
+    background-image: url(../images/btn-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.content-l .menu li a:hover {
+    color: #555;
+}
+/* section news*/
+.sec-news .tab-box {
+    width: 75%;
+    float: left
+}
+.sec-news .event-list {
+    width: 25%;
+    float: right;
+}
+.event-list ul {
+    padding: 0;
+    margin: 15px 0 0 5px;
+}
+.event-list ul li {
+    padding-top: 8px;
+    width: 100%;
+    border-bottom: 1px dashed #d2d2d2;
+    line-height: 22px;
+    color: #979797;
+}
+.event-list ul li .time {
+    padding: 10px 0;
+    font-size: 12px;
+    text-indent: 25px;
+    background: url(../images/time_icon.gif) no-repeat 0px 11px;
 }

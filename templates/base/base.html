@@ -11,6 +11,8 @@
         <link href="favicon.ico" >
         {% load staticfiles %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/common_ui.css' %}" media="screen" />
+
         {% block style %}
 
         {% endblock %}
@@ -21,10 +23,14 @@
             {% block content %}
             {% endblock %}
         </div>
-        <footer class="tem_footer">
-        </footer>
+
+        <div class="footer">
+           <h2>Footer Content</h2>
+        </div>
     </body>
     <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <script src="{% static 'js/common_ui.js'%}"></script>
+
     {% block script %}
     {% endblock %}
 </html>
