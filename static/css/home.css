@@ -1,0 +1,49 @@
+.sec-notic {
+    height: 35px;
+    margin-bottom: 4px;
+}
+
+
+/* slider */
+
+.sec-slider {
+    width: 978px;
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.my-slider ul li p {
+    float: right;
+    width: 50%
+}
+
+.unslider-nav {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.unslider-nav ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.unslider-nav ol li {
+    float: left;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #999;
+    font-size: 12px;
+    opacity: 0.7;
+    color: #ccc;
+    background: #666;
+}

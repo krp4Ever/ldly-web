@@ -1,1 +1,31 @@
 {% extends "base/base.html" %}
+{% load staticfiles %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/unslider.css' %}">
+{% endblock %}
+{% block script %}
+    <script src="{% static 'js/unslider.js' %}"></script>
+    <script type="text/javascript">
+        var slider = $('.my-slider').unslider({
+
+            arrows: false
+        });
+        $('.slider-bar ul li').click(function(){
+            slider.unslider('setIndex:arguments,1');
+        })
+    </script>
+{% endblock %}
+{% block content %}
+    <!-- 头部通知栏 -->
+    <section>
+        <div class="sec-notic"></div>
+    </section>
+    <!-- 轮播图 -->
+    <section>
+        <div class="sec-slider">
+            {% include 'home/home_slider.html' %}
+
+        </div>
+    </section>
+{% endblock %}

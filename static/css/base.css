@@ -1,3 +1,61 @@
 body {
     background-image: url(../images/header_bg.png);
+    margin: 0;
+    padding: 0;
+    background-color: #A4E1FD;
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+
+/* header*/
+
+.header-title {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    color: #5489a0;
+}
+
+.header-content {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-nav {
+    background: #39A4DC url(../images/nav_bg.gif) no-repeat center top;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.header-nav li {
+    float: left;
+    display: inline;
+    padding-right: 2px;
+}
+
+.header-nav li h3 {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li h3 a {
+    display: block;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* content */
+
+.main-content {
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
 }
