@@ -1,0 +1,48 @@
+.rTop {
+    position: fixed;
+    bottom:10px;
+    z-index: 599;
+    right: 0px;
+}
+.r_weixin {
+    width: 120px;
+    line-height: 40px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    text-indent: 50px;
+    color: #777;
+    position: relative;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    background: url(../images/r_top.png)  no-repeat -130px 11px
+}
+.r_msg  {
+    width: 120px;
+    line-height: 40px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    text-indent: 50px;
+    color: #777;
+    position: relative;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    background: url(../images/r_top.png)  no-repeat -130px -35px;
+}
+.r_service {
+    width: 120px;
+    line-height: 40px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    text-indent: 50px;
+    color: #777;
+    position: relative;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    background: url(../images/r_top.png)  no-repeat 12px -152px;
+}
+.item {
+    color: #777;
+}

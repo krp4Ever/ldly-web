@@ -1,34 +1,23 @@
+{% load staticfiles %}
 <header>
-    <section>
-        <div class="header-title" >
-            <h1><a title="国际产能合作信息服务平台">
-                <h2>国际产能合作信息服务平台</h2>
-            </a></h1>
-        </div>
-    </section>
-    <div class="header-content">
-        <ul class="header-nav">
-            <li>
-                <h3><a href="" title="首页" class="navdown">首页</a></h3>
-            </li>
-            <li>
-                <h3><a href="about/" title="政策指南">政策指南</a></h3>
-            </li>
-            <li class="nLi">
-                <h3><a href="news/" title="国别投资报告">国别投资报告</a></h3>
-            </li>
-            <li class="nLi">
-                <h3><a href="product/" title="行业联盟">行业联盟</a></h3>
-            </li>
-            <li class="nLi">
-                <h3><a href="download/" title="党政文件">研究智库</a></h3>
-            </li>
-            <li class="nLi">
-                <h3><a href="case/" title="人才工程">人才工程</a></h3>
-            </li>
-            <li class="nLi">
-                <h3><a href="case/" title="人才工程">直通车</a></h3>
-            </li>
-        </ul>
+    <div class="header-inner">
+        <h1 class="header-title">
+            <a href="#">
+                <img src="{% static 'images/logo.png'%}" alt="国际产能合作信息服务平台">
+                国际产能合作信息服务平台
+            </a>
+        </h1>
+
+        <nav class="header-nav">
+            <div>
+                <ul>
+                    <li><p><a href="#">政策指南</a></p></li>
+                    <li class=""><p><a href="#">投资报告</a></p></li>
+                    <li><p><a href="#">行业联盟</a></p></li>
+                    <li><p><a href="#">直通车</a></p></li>
+                </ul>
+            </div>
+        </nav><!-- / #headerMenu -->
+
     </div>
 </header>

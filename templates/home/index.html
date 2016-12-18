@@ -8,8 +8,10 @@
     <script src="{% static 'js/unslider.js' %}"></script>
     <script type="text/javascript">
         var slider = $('.my-slider').unslider({
-
-            arrows: false
+            arrows: {
+                prev: '<a class="unslider-arrow prev"><</a>',
+	            next: '<a class="unslider-arrow next">></a>'
+            }
         });
         $('.slider-bar ul li').click(function(){
             slider.unslider('setIndex:arguments,1');
@@ -18,27 +20,28 @@
 {% endblock %}
 {% block content %}
     <!-- 头部通知栏 -->
-    <section>
-        <div class="sec-notic"></div>
-    </section>
     <!-- 轮播图 -->
-    <section>
-        <div class="sec-slider">
+    <section class="sec-slider">
+        <div class="slider">
             {% include 'home/home_slider.html' %}
         </div>
     </section>
-    <section>
-        <div class="sec-news">
-            {% include 'base/tab_box.html'%}
-            {% include 'home/home_event.html'%}
-            <div class="clearfix"></div>
+    <!-- 顶部横排 -->
+    <section class="sec-topmenu">
+        <div class="topmenu">
+            <h2>
+                <em>最新资讯</em>
+            </h2>
+            {% include 'home/home_topmenu.html' %}
         </div>
-        <div class="sec-content">
+    </section>
+    <section class="sec-content">
+        <div class="content">
             <div class="content-l">
-                {% include 'home/home_menul.html' %}
+                {% include 'home/channel_list.html'%}
             </div>
             <div class="content-r">
-                {% include 'base/list_box.html' %}
+                {% include 'home/channel_list.html'%}
             </div>
             <div class="clearfix"></div>
         </div>

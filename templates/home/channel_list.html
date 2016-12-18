@@ -1,0 +1,15 @@
+<div class="cnt-title">
+    <h3><em>
+        {{ channelList.title}}
+    </em></h3>
+</div>
+<ul class="cnt-list">
+    {% for item in channelList.dataArray %}
+    <li>
+        <p>
+            <a href="#">{{item.content}}</a>
+            <p class="time">{{item.date}}</p>
+        </p>
+    </li>
+    {% endfor %}
+</ul>
