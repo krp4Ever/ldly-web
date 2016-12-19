@@ -6,6 +6,7 @@
 {% endblock %}
 {% block script %}
     <script src="{% static 'js/unslider.js' %}"></script>
+    <script src="{% static 'js/common_ui.js' %}"></script>
     <script type="text/javascript">
         var slider = $('.my-slider').unslider({
             arrows: {
@@ -23,7 +24,7 @@
     <!-- 轮播图 -->
     <section class="sec-slider">
         <div class="slider">
-            {% include 'home/home_slider.html' %}
+            {% include 'home/home_slider.html' with sliderContent=sliderContent only %}
         </div>
     </section>
     <!-- 顶部横排 -->
@@ -38,10 +39,10 @@
     <section class="sec-content">
         <div class="content">
             <div class="content-l">
-                {% include 'home/channel_list.html'%}
+                {% include 'home/channel_list.html' with chanels=channelList only %}
             </div>
             <div class="content-r">
-                {% include 'home/channel_list.html'%}
+                {% include 'home/channel_list.html' with chanels=channelList only %}
             </div>
             <div class="clearfix"></div>
         </div>
