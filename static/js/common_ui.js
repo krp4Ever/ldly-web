@@ -1,6 +1,11 @@
-$(".tab-box .tab-nav >a").click(
-   function(){
-       $(this).addClass("cur").siblings().removeClass("cur");
-       $(".tab-box .tab-content ul").eq($(this).index()).show().siblings().hide();
-   }
-);
+$(function () {
+    $('.unslider').hover(function (){
+        $('.unslider-active  .slider-item-desc').stop()
+        $('.unslider-active  .slider-item-desc').fadeIn()
+
+    },
+    function() {
+        $('.unslider-active  .slider-item-desc').stop()
+        $('.unslider-active  .slider-item-desc').fadeOut()
+    })
+})

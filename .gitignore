@@ -5,7 +5,7 @@ Desktop.ini
 Icon?
 
 # python
-.pyc
+*.pyc
 
 # db
 .sqlite3

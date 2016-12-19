@@ -9,7 +9,8 @@
 }
 
 .unslider-wrap.unslider-carousel>li {
-    float: left
+    float: left;
+    position: relative;
 }
 
 .unslider-vertical>ul {

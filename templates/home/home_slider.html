@@ -1,20 +1,15 @@
 {% load staticfiles %}
 <div class="my-slider">
     <ul>
-        <li>
-            <img src="{% static 'images/content/slider_pic1.jpg' %}" alt="">
-            <p>
-                推进国际产能和装备制造合作，是保持我国经济中高速增长和迈向中高端
-                水平的重大举措。
-            </p>
-        </li>
-        <li>
-            <img src="{% static 'images/content/slider_pic2.jpg' %}" alt="">
-
-        </li>
-        <li>
-            <img src="{% static 'images/content/slider_pic2.jpg' %}" alt="">
-        
-        </li>
+        {% for  content in sliderContent %}
+            <li>
+                <a href="#">
+                    <img  src="{{content.img}}" alt="">
+                    <div class="slider-item-desc" style="display:none">
+                        <p>{{content.desc}}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
     </ul>
 </div>
